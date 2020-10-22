@@ -11,6 +11,7 @@
    -moz-text-decoration-color:orange;
    -webkit-text-decoration-color:orange;
    text-decoration-color:orange;
+   margin-bottom:20px;
 
     }
 
@@ -42,15 +43,20 @@ body{
 
 #leftbar #photo img{
     display:inline-block;
-    height:50px;
-    width:50px;
-    border-radius:50%;
+    height:120px;
+    width:120px;
+    border-color:grey;
+    border-image: none;
+    border-radius: 50% 50% 50% 50%;
+    overflow: hidden;
+    border: 3px solid rgba(128, 128, 128, .3)
 }
 
 .boldtext{
     font-weight:bold;
     display:inline-block;
-    margin-left:20px;
+    margin-left:15px;
+    vertical-align: text-top;
 }
 
 
@@ -122,7 +128,7 @@ main{
     width:800px;
     background-color:white;
     margin:auto;
-    padding: 0 20px 0 20px;
+    padding: 0px 20px 0 20px;
 }
 
 .cursus{
@@ -131,11 +137,11 @@ main{
 }
 
 .cursus div:first-child{
-    flex:1 30%;
+    flex:1 40%;
 }
 
 .cursus div:last-child{
-    flex:1 70%;
+    flex:1 60%;
 }
 .cursus div h4{
     text-transform:uppercase;
@@ -164,6 +170,7 @@ h1{
 }
 
 main h3{
+    margin-top:55px;
     margin-bottom:0;
 }
 main h3 i{
@@ -187,26 +194,42 @@ h3{
 .reco div:last-child{
     flex:1 50%;
 }
-.reco div h4{
+.reco div h4 h6{
     text-transform:uppercase;
     font-family:'Roboto',sans-serif;
     margin:0;
-    color:grey;
+   }
+h4{
+     color:grey;
+}
+
+h6{
+    color:black;
+    font-size:14px;
 }
 
 i{
     color:orange;
 }
 
+.size-20{
+    font-size:20px;
+}
+
+.size-10{
+    font-size:10px;
+}
 
 hr{
     width:100%;
     padding:0;
+    margin-top:20px;
+    margin-bottom:40px;
     background-color:orange;
 }
 
 
-@media (min-width: 801px) and (max-width: 1000px)
+@media (min-width: 800px) and (max-width: 1000px)
 {
 
 body{
@@ -221,11 +244,11 @@ main,#leftbar{
 }
 
 main{
-    background-color:#ff6a0d;
+    background-color:white;
 }
 
 #leftbar{
-    background-color:#f3d477;
+    background-color:orange;
 }
 
 #leftbar footer{
@@ -248,11 +271,11 @@ main,#leftbar{
 }
 
 main{
-    background-color:#ff6a0d;
+    background-color:white;
 }
 
 #leftbar{
-    background-color:#f3d477;
+    background-color:orange;
 
 }
 
